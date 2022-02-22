@@ -34,7 +34,7 @@ public class PricingServiceApplicationTests {
     }
 
     @Test
-    public void testGetRequest() throws Exception {
+    public void getRequestTest() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders
                         .get("/services/price?vehicleId=1")
                         .accept(MediaType.APPLICATION_JSON))
